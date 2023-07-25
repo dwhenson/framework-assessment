@@ -1,18 +1,34 @@
 @use "../abstracts" as *;
 
 .has-sidebar {
+  --side-size: 25rem;
+
   display: flex;
   flex-wrap: wrap;
-  gap: var(--bespoke-gap, #{spaceValue(space-s)});
+  gap: var(--gap, var(--space-s));
 
   > :first-child {
     flex-basis: var(--side-size, 30rem);
-    flex-grow: 1;
+    flex-grow: var(--flex-grow, 1);
   }
 
   > :last-child {
     flex-basis: 0;
-    flex-grow: 999;
+    flex-grow: var(--flex-grow, 999);
     min-inline-size: var(--main-size, 50%);
+  }
+
+  &[data-state="reversed"] {
+    > :first-child {
+      flex-basis: 0;
+      flex-grow: var(--flex-grow, 999);
+      min-inline-size: var(--main-size, 50%);
+    }
+
+    > :last-child {
+      flex-basis: var(--side-size, 30rem);
+      flex-grow: var(--flex-grow, 1);
+      min-inline-size: unset;
+    }
   }
 }
