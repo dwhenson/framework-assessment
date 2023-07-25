@@ -82,6 +82,12 @@ img[src$=".svg"] {
   max-inline-size: none;
 }
 
+// Remove all default button styles
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,

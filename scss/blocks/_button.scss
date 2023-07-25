@@ -3,10 +3,10 @@
 .button {
   display: inline-flex;
   align-items: center;
-  gap: spaceValue(space-l);
+  gap: var(--space-l);
   inline-size: fit-content;
-  padding-block: spaceValue(space-xs);
-  padding-inline: spaceValue(space-m);
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-m);
   border: 1px solid currentColor;
   border-radius: 999px;
   line-height: 1;

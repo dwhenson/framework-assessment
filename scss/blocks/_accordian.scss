@@ -1,49 +1,53 @@
+.accordion-panel {
+  position: relative;
+  padding-block-end: var(--space-s);
+  padding-inline-start: var(--space-3xl);
+  border-block-end: 1px solid var(--clr-neutral-dark);
+  counter-increment: counter 1;
+
+  &::before {
+    content: "0" counter(counter);
+    position: absolute;
+    inset-inline-start: 0;
+    font-size: var(--step-1);
+    line-height: 1.1;
+  }
+}
+
 .accordion-content {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 500ms;
+
+  &[aria-hidden="false"] {
+    grid-template-rows: 1fr;
+  }
+
+  .content-wrapper {
+    overflow: hidden;
+  }
 }
 
-.accordion-content[aria-hidden="false"] {
-  grid-template-rows: 1fr;
+// trigger and animations
+
+.accordion .panel-title {
+  position: relative;
 }
-
-.accordion-content > div {
-  overflow: hidden;
-}
-
-// .wrapper {
-//   inline-size: min(65ch, 100% - 4rem);
-//   margin-inline: auto;
-// }
-
-// .accordion-panel {
-//   padding: 1rem;
-//   border: 1px solid;
-// }
-
-// .accordion h3 {
-//   position: relative;
-// }
 
 .accordion-trigger {
-  // border: 0;
-  // background: transparent;
-  // font: inherit;
-  // color: inherit;
+  // border: 1px solid red;
 }
-
-// animations
 
 .accordion-trigger::before,
 .accordion-trigger::after {
   content: "";
   position: absolute;
   display: block;
-  inset-inline-end: 1em;
+  inset-inline-end: 0;
   inline-size: 1em;
   block-size: 5px;
   background: currentcolor;
+  transform: translate(100%, -100%);
   transition: transform 500ms;
 }
 

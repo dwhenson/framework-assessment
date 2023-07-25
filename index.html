@@ -24,7 +24,7 @@
         </a>
         <burger-menu max-width="640">
           <nav class="navigation" aria-label="primary navigation">
-            <ul role="list" style="display: flex; gap: 10rem">
+            <ul role="list">
               <li><a href="/">Nav Button 01</a></li>
               <li><a href="/">Nav Button 02</a></li>
               <li><a href="/">Nav Button 02</a></li>
@@ -109,21 +109,27 @@
         </div>
       </section>
 
-      <section>
-        <h2>Heading text here...</h2>
+      <section class="flow-content">
+        <h2 class="h1">Heading text here...</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur. Malesuada sit consequat
           tristique consectetur sit tristique amet in. Etiam egestas elit
           vestibulum commodo.
         </p>
 
-        <div class="accordion">
-          <div class="accordion-panel">
-            <h3 id="panel1-title">
+        <ol
+          role="list"
+          id="accordion"
+          class="flow-content"
+          style="--flow-content: var(--space-xl)"
+        >
+          <li class="accordion-panel">
+            <h3 class="h4 panel-title">
               <button
                 class="accordion-trigger"
                 aria-expanded="false"
                 aria-controls="accordion1-content"
+                id="panel1"
               >
                 Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
               </button>
@@ -131,12 +137,12 @@
             <div
               class="accordion-content"
               role="region"
-              aria-labelledby="panel1-title"
+              aria-labelledby="panel1"
               aria-hidden="true"
               id="accordion1-content"
             >
-              <div>
-                <p>
+              <div class="flow-content content-wrapper">
+                <p class="margin-block-start-space-s">
                   Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
                   adipiscing odio sapien nunc vitae. Et amet maecenas morbi
                   praesent justo convallis facilisis phasellus. Feugiat ac
@@ -146,18 +152,158 @@
                 </p>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+          <li class="accordion-panel">
+            <h3 class="h4 panel-title">
+              <button
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="accordion2-content"
+                id="panel2"
+              >
+                Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
+              </button>
+            </h3>
+            <div
+              class="accordion-content"
+              role="region"
+              aria-labelledby="panel2"
+              aria-hidden="true"
+              id="accordion2-content"
+            >
+              <div class="flow-content content-wrapper">
+                <p class="margin-block-start-space-s">
+                  Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
+                  adipiscing odio sapien nunc vitae. Et amet maecenas morbi
+                  praesent justo convallis facilisis phasellus. Feugiat ac
+                  pretium augue pharetra adipiscing. In dictum vitae nunc urna.
+                  Tincidunt augue diam amet tincidunt amet. Tellus pharetra nunc
+                  etiam laoreet non ultricies a suspendisse. At.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-panel">
+            <h3 class="h4 panel-title">
+              <button
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="accordion3-content"
+                id="panel3"
+              >
+                Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
+              </button>
+            </h3>
+            <div
+              class="accordion-content"
+              role="region"
+              aria-labelledby="panel3"
+              aria-hidden="true"
+              id="accordion3-content"
+            >
+              <div class="flow-content content-wrapper">
+                <p class="margin-block-start-space-s">
+                  Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
+                  adipiscing odio sapien nunc vitae. Et amet maecenas morbi
+                  praesent justo convallis facilisis phasellus. Feugiat ac
+                  pretium augue pharetra adipiscing. In dictum vitae nunc urna.
+                  Tincidunt augue diam amet tincidunt amet. Tellus pharetra nunc
+                  etiam laoreet non ultricies a suspendisse. At.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-panel">
+            <h3 class="h4 panel-title">
+              <button
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="accordion4-content"
+                id="panel4"
+              >
+                Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
+              </button>
+            </h3>
+            <div
+              class="accordion-content"
+              role="region"
+              aria-labelledby="panel4"
+              aria-hidden="true"
+              id="accordion4-content"
+            >
+              <div class="flow-content content-wrapper">
+                <p class="margin-block-start-space-s">
+                  Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
+                  adipiscing odio sapien nunc vitae. Et amet maecenas morbi
+                  praesent justo convallis facilisis phasellus. Feugiat ac
+                  pretium augue pharetra adipiscing. In dictum vitae nunc urna.
+                  Tincidunt augue diam amet tincidunt amet. Tellus pharetra nunc
+                  etiam laoreet non ultricies a suspendisse. At.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ol>
 
-        <a class="button" href="/">CTA Button</a>
+        <a class="button margin-block-start-space-xl" href="/"
+          >CTA Button
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            stroke="#253f3c"
+            stroke-width="0.25"
+          >
+            <path
+              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+            />
+          </svg>
+        </a>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="padding-block-end-space-3xl">
+      <div class="footer-wrapper">
+        <a
+          class="tt-uppercase fw-bold margin-block-end-space-xl"
+          href="/"
+          aria-label="Sunnyside Home"
+        >
+          Cottage Retreat
+        </a>
+        <nav class="navigation">
+          <ul role="list" class="nav-list">
+            <li><a href="/">Nav Button 01</a></li>
+            <li><a href="/">Nav Button 02</a></li>
+            <li><a href="/">Nav Button 02</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-wrapper">
+        <ul role="list" class="legal margin-block-start-space-m">
+          <li><a href="/">Privacy</a></li>
+          <li><a href="/">Terms and Conditions</a></li>
+        </ul>
+        <div class="margin-block-start-space-xl">
+          <p>
+            <small>Company name © 2023. All rights Reserved. </small>
+          </p>
+          <p>
+            <small
+              >Design by
+              <span class="fw-bold">
+                <a href="https://www.weareframework.co.uk/">Framework</a>
+              </span>
+            </small>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
   <script>
-    // Accordian
-    const accordion = document.querySelector(".accordion");
+    const accordion = document.querySelector("#accordion");
 
     function toggleAccordion(panelToActivate) {
       const activeButton = panelToActivate.querySelector("button");

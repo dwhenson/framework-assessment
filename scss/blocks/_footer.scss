@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+footer {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+
+    @include respond-to("small") {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .nav-list {
+        flex-direction: row;
+        align-items: start;
+      }
+    }
+  }
+
+  .footer-wrapper:last-of-type {
+    @include respond-to("small") {
+      flex-direction: row-reverse;
+      align-items: end;
+
+      .legal {
+        gap: var(--space-2xs);
+      }
+    }
+  }
+}
