@@ -19,12 +19,12 @@
     <header class="flow-region">
       <div class="site-head">
         <a class="visually-hidden" href="#main-content">Skip to content</a>
-        <a class="logo" href="/" aria-label="Sunnyside Home">
+        <a class="tt-uppercase fw-bold" href="/" aria-label="Sunnyside Home">
           Cottage Retreat
         </a>
         <burger-menu max-width="640">
           <nav class="navigation" aria-label="primary navigation">
-            <ul role="list">
+            <ul role="list" style="display: flex; gap: 10rem">
               <li><a href="/">Nav Button 01</a></li>
               <li><a href="/">Nav Button 02</a></li>
               <li><a href="/">Nav Button 02</a></li>
@@ -122,7 +122,7 @@
             <h3 id="panel1-title">
               <button
                 class="accordion-trigger"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="accordion1-content"
               >
                 Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
@@ -132,8 +132,8 @@
               class="accordion-content"
               role="region"
               aria-labelledby="panel1-title"
-              aria-hidden="false"
-              id="panel1-content"
+              aria-hidden="true"
+              id="accordion1-content"
             >
               <div>
                 <p>
@@ -146,128 +146,37 @@
                 </p>
               </div>
             </div>
-            <div class="accordion-panel">
-              <h3 id="panel2-title">
-                <button
-                  class="accordion-trigger"
-                  aria-expanded="true"
-                  aria-controls="accordion1-content"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
-                </button>
-              </h3>
-              <div
-                class="accordion-content"
-                role="region"
-                aria-labelledby="panel1-title"
-                aria-hidden="false"
-                id="panel2-content"
-              >
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
-                    adipiscing odio sapien nunc vitae. Et amet maecenas morbi
-                    praesent justo convallis facilisis phasellus. Feugiat ac
-                    pretium augue pharetra adipiscing. In dictum vitae nunc
-                    urna. Tincidunt augue diam amet tincidunt amet. Tellus
-                    pharetra nunc etiam laoreet non ultricies a suspendisse. At.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-panel">
-              <h3 id="panel1-title">
-                <button
-                  class="accordion-trigger"
-                  aria-expanded="true"
-                  aria-controls="accordion1-content"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
-                </button>
-              </h3>
-              <div
-                class="accordion-content"
-                role="region"
-                aria-labelledby="panel1-title"
-                aria-hidden="false"
-                id="panel1-content"
-              >
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
-                    adipiscing odio sapien nunc vitae. Et amet maecenas morbi
-                    praesent justo convallis facilisis phasellus. Feugiat ac
-                    pretium augue pharetra adipiscing. In dictum vitae nunc
-                    urna. Tincidunt augue diam amet tincidunt amet. Tellus
-                    pharetra nunc etiam laoreet non ultricies a suspendisse. At.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-panel">
-              <h3 id="panel3-title">
-                <button
-                  class="accordion-trigger"
-                  aria-expanded="true"
-                  aria-controls="accordion1-content"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
-                </button>
-              </h3>
-              <div
-                class="accordion-content"
-                role="region"
-                aria-labelledby="panel1-title"
-                aria-hidden="false"
-                id="panel3-content"
-              >
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
-                    adipiscing odio sapien nunc vitae. Et amet maecenas morbi
-                    praesent justo convallis facilisis phasellus. Feugiat ac
-                    pretium augue pharetra adipiscing. In dictum vitae nunc
-                    urna. Tincidunt augue diam amet tincidunt amet. Tellus
-                    pharetra nunc etiam laoreet non ultricies a suspendisse. At.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-panel">
-              <h3 id="panel4-title">
-                <button
-                  class="accordion-trigger"
-                  aria-expanded="true"
-                  aria-controls="accordion1-content"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
-                </button>
-              </h3>
-              <div
-                class="accordion-content"
-                role="region"
-                aria-labelledby="panel1-title"
-                aria-hidden="false"
-                id="panel4-content"
-              >
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
-                    adipiscing odio sapien nunc vitae. Et amet maecenas morbi
-                    praesent justo convallis facilisis phasellus. Feugiat ac
-                    pretium augue pharetra adipiscing. In dictum vitae nunc
-                    urna. Tincidunt augue diam amet tincidunt amet. Tellus
-                    pharetra nunc etiam laoreet non ultricies a suspendisse. At.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
+
         <a class="button" href="/">CTA Button</a>
       </section>
     </main>
 
     <footer></footer>
   </body>
+  <script>
+    // Accordian
+    const accordion = document.querySelector(".accordion");
+
+    function toggleAccordion(panelToActivate) {
+      const activeButton = panelToActivate.querySelector("button");
+      const activePanel = panelToActivate.querySelector(".accordion-content");
+      const activePanelIsOpened = activeButton.getAttribute("aria-expanded");
+
+      if (activePanelIsOpened === "true") {
+        activeButton.setAttribute("aria-expanded", false);
+        activePanel.setAttribute("aria-hidden", true);
+      } else {
+        activeButton.setAttribute("aria-expanded", true);
+        activePanel.setAttribute("aria-hidden", false);
+      }
+    }
+
+    accordion.addEventListener("click", (event) => {
+      const activePanel = event.target.closest(".accordion-panel");
+      if (!activePanel) return;
+      toggleAccordion(activePanel);
+    });
+  </script>
 </html>
