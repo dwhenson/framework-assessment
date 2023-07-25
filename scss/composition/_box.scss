@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.box {
+  padding-block: var(--padding-block, spaceValue(space-s));
+  padding-inline: var(--padding-inline, spaceValue(space-s));
+  background-color: var(--color-fg, #{colorValue(neutral, light)});
+  color: var(--color-bg, #{colorValue(primary, dark)});
+}
+
+.box * {
+  color: inherit;
+}

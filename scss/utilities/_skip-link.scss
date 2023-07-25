@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.skip-link {
+  position: absolute;
+  z-index: 100000;
+  display: inline-block;
+  inset-block-start: 1rem;
+  inset-inline-start: 1rem;
+  padding-block: 0.7rem 0.5rem;
+  padding-inline: 1rem;
+  outline: 3px dashed var(--color-fg, #{colorValue(neutral, dark)});
+  background-color: var(--color-fg, #{colorValue(neutral, dark)});
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-fg, #{colorValue(neutral, light)});
+}
+
+.skip-link:hover {
+  background-color: var(--color-fg, colorValue(neutral, light));
+  color: var(--color-fg, #{colorValue(neutral, dark)});
+}
+
+.skip-link:not(:focus) {
+  position: absolute;
+  inline-size: 1px;
+  block-size: auto;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Remove necessary focus style as main is the :target */
+main:focus {
+  outline: none;
+}

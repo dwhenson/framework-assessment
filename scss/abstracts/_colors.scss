@@ -1,0 +1,19 @@
+:root {
+  --clr-neutral-light: #f8faf6;
+  --clr-neutral-normal: #f1f3f0;
+  --clr-neutral-dark: #bec5c2;
+  --clr-primary-normal: #2f4845;
+  --clr-primary-dark: #253f3c;
+}
+
+$colors: (
+  neutral: (
+    light: #f8faf6,
+    normal: #f1f3f0,
+    dark: #bec5c2,
+  ),
+  primary: (
+    normal: #2f4845,
+    dark: #253f3c,
+  ),
+);

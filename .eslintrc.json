@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true
+  },
+  "plugins": [
+    "html",
+    "unicorn"
+  ],
+  "extends": [
+    "healthier",
+    "prettier",
+    "plugin:unicorn/recommended"
+  ],
+  "rules": {
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "no-unused-vars": "warn"
+  }
+}

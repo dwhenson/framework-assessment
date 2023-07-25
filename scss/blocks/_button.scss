@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: spaceValue(space-l);
+  inline-size: fit-content;
+  padding-block: spaceValue(space-xs);
+  padding-inline: spaceValue(space-m);
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+:root {
+  /* font-sizes */
+  --step--1: clamp(0.75rem, calc(0.75rem + 0vw), 0.75rem);
+  --step-0: clamp(0.94rem, calc(0.92rem + 0.09vw), 1rem);
+  --step-1: clamp(1.17rem, calc(1.12rem + 0.24vw), 1.33rem);
+  --step-2: clamp(1.47rem, calc(1.36rem + 0.47vw), 1.78rem);
+  --step-3: clamp(1.83rem, calc(1.64rem + 0.81vw), 2.37rem);
+  --step-4: clamp(2.29rem, calc(1.98rem + 1.31vw), 3.16rem);
+}
+
+$font-sizes: (
+  "step--1": clamp(0.75rem, calc(0.75rem + 0vw), 0.75rem),
+  "step-0": clamp(0.94rem, calc(0.92rem + 0.09vw), 1rem),
+  "step-1": clamp(1.17rem, calc(1.12rem + 0.24vw), 1.33rem),
+  "step-2": clamp(1.47rem, calc(1.36rem + 0.47vw), 1.78rem),
+  "step-3": clamp(1.83rem, calc(1.64rem + 0.81vw), 2.37rem),
+  "step-4": clamp(2.29rem, calc(1.98rem + 1.31vw), 3.16rem),
+);
+
+$ff-body: "Open Sans", "Segoe UI", Tahoma, system-ui, sans-serif;
+$ff-headings: "Open Sans", "Segoe UI", Tahoma, system-ui, sans-serif;

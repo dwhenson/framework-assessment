@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.container {
+  inline-size: min(
+    100% - var(--min, calc(#{spaceValue(space-s)} * 2)),
+    var(--container-max, 1440px)
+  );
+  margin-inline: auto;
+}

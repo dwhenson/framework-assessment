@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.has-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--bespoke-gap, #{spaceValue(space-s)});
+
+  > :first-child {
+    flex-basis: var(--side-size, 30rem);
+    flex-grow: 1;
+  }
+
+  > :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: var(--main-size, 50%);
+  }
+}

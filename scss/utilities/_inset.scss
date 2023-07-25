@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.inset {
+  padding-inline-start: 0;
+
+  @include respond-to("small") {
+    padding-inline-start: calc(var(--space-s-3xl) * 2);
+  }
+}

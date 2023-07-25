@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/scss/main.scss" />
+    <script src="/js/main.js" async type="module"></script>
+    <title>Home - Cottage Retreat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="align-content">
+    <header class="flow-region">
+      <div class="site-head">
+        <a class="visually-hidden" href="#main-content">Skip to content</a>
+        <a class="logo" href="/" aria-label="Sunnyside Home">
+          Cottage Retreat
+        </a>
+        <burger-menu max-width="640">
+          <nav class="navigation" aria-label="primary navigation">
+            <ul role="list">
+              <li><a href="/">Nav Button 01</a></li>
+              <li><a href="/">Nav Button 02</a></li>
+              <li><a href="/">Nav Button 02</a></li>
+            </ul>
+          </nav>
+        </burger-menu>
+      </div>
+      <div class="flow-content" style="--flow-content: var(--space-l)">
+        <h1>Lorem ipsum dolor sit amet consectetur. Et at quam ac vitae.</h1>
+      </div>
+    </header>
+
+    <div class="margin-block-start-space-l" style="grid-column: 2/-1">
+      <img
+        class="hero-image"
+        src="/assets/hero.jpg"
+        alt="A nice view of some mountains"
+      />
+    </div>
+    <main id="main-content" class="flow-region">
+      <section>
+        <div class="inset">
+          <div class="flow-content">
+            <p class="fs-step--1" style="letter-spacing: 2px">Subheading</p>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur. Nibh ut nullam senectus
+              sit vitae vitae ultricies.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Lorem ut eu enim dolor in
+              diam velit diam. Pretium nulla eget mattis feugiat vel neque augue
+              nisl vitae. Egestas sed erat molestie cras accumsan purus
+              tincidunt. Elementum ultrices quis est semper donec tortor. Lacus.
+            </p>
+            <a class="button margin-block-start-space-xl" href="/"
+              >CTA Button
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                stroke="#253f3c"
+                stroke-width="0.25"
+              >
+                <path
+                  d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow-content" style="--flow-content: var(--space-s)">
+        <div class="image-grid-row">
+          <div>
+            <img src="/assets/grid/1.jpg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/grid/2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="image-grid-row">
+          <img src="/assets/grid/3.jpg" alt="" />
+        </div>
+        <div class="image-grid-row" style="--flex-grow: 1">
+          <div><img src="/assets/grid/4.jpg" alt="" /></div>
+          <div><img src="/assets/grid/5.jpg" alt="" /></div>
+        </div>
+        <div class="image-grid-row" data-state="reversed">
+          <div><img src="/assets/grid/7.jpg" alt="" /></div>
+          <div><img src="/assets/grid/6.jpg" alt="" /></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Heading text here...</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Malesuada sit consequat
+          tristique consectetur sit tristique amet in. Etiam egestas elit
+          vestibulum commodo.
+        </p>
+
+        <div class="accordion">
+          <div class="accordion-panel">
+            <h3 id="panel1-title">
+              <button
+                class="accordion-trigger"
+                aria-expanded="true"
+                aria-controls="accordion1-content"
+              >
+                Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
+              </button>
+            </h3>
+            <div
+              class="accordion-content"
+              role="region"
+              aria-labelledby="panel1-title"
+              aria-hidden="false"
+              id="panel1-content"
+            >
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
+                  adipiscing odio sapien nunc vitae. Et amet maecenas morbi
+                  praesent justo convallis facilisis phasellus. Feugiat ac
+                  pretium augue pharetra adipiscing. In dictum vitae nunc urna.
+                  Tincidunt augue diam amet tincidunt amet. Tellus pharetra nunc
+                  etiam laoreet non ultricies a suspendisse. At.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <h3 id="panel2-title">
+                <button
+                  class="accordion-trigger"
+                  aria-expanded="true"
+                  aria-controls="accordion1-content"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
+                </button>
+              </h3>
+              <div
+                class="accordion-content"
+                role="region"
+                aria-labelledby="panel1-title"
+                aria-hidden="false"
+                id="panel2-content"
+              >
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
+                    adipiscing odio sapien nunc vitae. Et amet maecenas morbi
+                    praesent justo convallis facilisis phasellus. Feugiat ac
+                    pretium augue pharetra adipiscing. In dictum vitae nunc
+                    urna. Tincidunt augue diam amet tincidunt amet. Tellus
+                    pharetra nunc etiam laoreet non ultricies a suspendisse. At.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <h3 id="panel1-title">
+                <button
+                  class="accordion-trigger"
+                  aria-expanded="true"
+                  aria-controls="accordion1-content"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
+                </button>
+              </h3>
+              <div
+                class="accordion-content"
+                role="region"
+                aria-labelledby="panel1-title"
+                aria-hidden="false"
+                id="panel1-content"
+              >
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
+                    adipiscing odio sapien nunc vitae. Et amet maecenas morbi
+                    praesent justo convallis facilisis phasellus. Feugiat ac
+                    pretium augue pharetra adipiscing. In dictum vitae nunc
+                    urna. Tincidunt augue diam amet tincidunt amet. Tellus
+                    pharetra nunc etiam laoreet non ultricies a suspendisse. At.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <h3 id="panel3-title">
+                <button
+                  class="accordion-trigger"
+                  aria-expanded="true"
+                  aria-controls="accordion1-content"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
+                </button>
+              </h3>
+              <div
+                class="accordion-content"
+                role="region"
+                aria-labelledby="panel1-title"
+                aria-hidden="false"
+                id="panel3-content"
+              >
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
+                    adipiscing odio sapien nunc vitae. Et amet maecenas morbi
+                    praesent justo convallis facilisis phasellus. Feugiat ac
+                    pretium augue pharetra adipiscing. In dictum vitae nunc
+                    urna. Tincidunt augue diam amet tincidunt amet. Tellus
+                    pharetra nunc etiam laoreet non ultricies a suspendisse. At.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <h3 id="panel4-title">
+                <button
+                  class="accordion-trigger"
+                  aria-expanded="true"
+                  aria-controls="accordion1-content"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
+                </button>
+              </h3>
+              <div
+                class="accordion-content"
+                role="region"
+                aria-labelledby="panel1-title"
+                aria-hidden="false"
+                id="panel4-content"
+              >
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
+                    adipiscing odio sapien nunc vitae. Et amet maecenas morbi
+                    praesent justo convallis facilisis phasellus. Feugiat ac
+                    pretium augue pharetra adipiscing. In dictum vitae nunc
+                    urna. Tincidunt augue diam amet tincidunt amet. Tellus
+                    pharetra nunc etiam laoreet non ultricies a suspendisse. At.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="button" href="/">CTA Button</a>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

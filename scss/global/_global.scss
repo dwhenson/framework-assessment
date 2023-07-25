@@ -1,0 +1,53 @@
+@use "../abstracts" as *;
+
+body {
+  grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
+  background-color: var(--clr-neutral-light);
+  font-family: $ff-body;
+  font-size: var(--step-0);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--clr-primary-dark);
+}
+
+:is(h1, h2, h3, h4) {
+  max-inline-size: min(100%, 28ch);
+  font-family: $ff-headings;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h1,
+.h1 {
+  font-size: var(--step-4);
+}
+
+h2,
+.h2 {
+  font-size: var(--step-3);
+}
+
+h3,
+.h3 {
+  font-size: var(--step-2);
+}
+
+h4,
+.h4 {
+  font-size: var(--step-1);
+}
+
+p {
+  max-inline-size: min(100%, 65ch);
+}
+
+:focus-visible {
+  opacity: 1 !important;
+  outline: 4px solid currentColor;
+  outline-offset: 4px;
+}
+
+:focus:not(:focus-visible) {
+  outline: transparent;
+}
