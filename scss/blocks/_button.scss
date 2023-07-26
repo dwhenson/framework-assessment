@@ -3,13 +3,31 @@
 .button {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-l);
+  gap: var(--space-s);
   inline-size: fit-content;
   padding-block: var(--space-xs);
   padding-inline: var(--space-m);
   border: 1px solid currentColor;
   border-radius: 999px;
+  background-color: var(--clr-neutral-light);
+  transition: color 500ms ease-out, background-color 500ms ease-out;
+  font-weight: 400;
   line-height: 1;
   text-decoration: none;
+  color: var(--clr-primary-dark);
   cursor: pointer;
+}
+
+.button:where(:hover, :focus, :active) {
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-neutral-light);
+}
+
+.arrow-icon {
+  stroke: var(--clr-primary-dark);
+  transition: stroke 500ms ease-out;
+}
+
+.button:where(:hover, :focus, :active) .arrow-icon {
+  stroke: var(--clr-neutral-light);
 }

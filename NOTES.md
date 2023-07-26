@@ -1,6 +1,5 @@
 FIXME inline google fonts
 FIXME burger trigger outline
-FIXME Close accordian with js
 FIXME add dimensions to images
 
 TODO Remove SCSS utilites
