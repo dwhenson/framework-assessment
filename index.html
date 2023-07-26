@@ -46,13 +46,16 @@
     </header>
 
     <div style="margin-block-start: var(--space-l); grid-column: 2/-1">
-      <img
-        class="hero-image"
-        src="/assets/hero.jpg"
-        alt="A nice view of some mountains near the cottage."
-        width="1340"
-        height="600"
-      />
+      <picture>
+        <source srcset="/assets/hero-desktop.jpg" media="(min-width: 640px)" />
+        <img
+          class="hero-image"
+          src="/assets/hero-mobile.jpg"
+          alt="A nice view of some mountains near the cottage."
+          width="1340"
+          height="600"
+        />
+      </picture>
     </div>
 
     <main class="flow-region">
