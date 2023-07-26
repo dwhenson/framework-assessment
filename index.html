@@ -15,7 +15,7 @@
     />
   </head>
 
-  <body class="align-content">
+  <body class="layout">
     <header class="flow-region">
       <div class="header">
         <a class="brand" href="/" aria-label="Sunnyside Home">
@@ -40,7 +40,10 @@
       </div>
     </header>
 
-    <div class="margin-block-start-space-l" style="grid-column: 2/-1">
+    <div
+      class="margin-block-start-space-l"
+      style="margin-block-start: var(--space-l); grid-column: 2/-1"
+    >
       <img
         class="hero-image"
         src="/assets/hero.jpg"
@@ -54,7 +57,9 @@
       <section>
         <div class="inset">
           <div class="flow-content">
-            <p class="fs-step--1" style="letter-spacing: 2px">Subheading</p>
+            <p style="font-size: var(--step--1); letter-spacing: 2px">
+              Subheading
+            </p>
             <h2>
               Lorem ipsum dolor sit amet consectetur. Nibh ut nullam senectus
               sit vitae vitae ultricies.
@@ -171,6 +176,17 @@
               >
                 Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
               </button>
+              <svg
+                style="flex-shrink: 0"
+                class="plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 160 160"
+              >
+                <rect class="vertical-line" x="70" width="10" height="160" />
+                <rect y="70" width="160" height="10" />
+              </svg>
             </h3>
             <div
               class="accordion-content"
@@ -180,7 +196,7 @@
               id="accordion1-content"
             >
               <div class="flow-content content-wrapper">
-                <p class="margin-block-start-space-s">
+                <p style="margin-block-start: var(--space-s)">
                   Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
                   adipiscing odio sapien nunc vitae. Et amet maecenas morbi
                   praesent justo convallis facilisis phasellus. Feugiat ac
@@ -201,6 +217,17 @@
               >
                 Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
               </button>
+              <svg
+                style="flex-shrink: 0"
+                class="plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 160 160"
+              >
+                <rect class="vertical-line" x="70" width="10" height="160" />
+                <rect y="70" width="160" height="10" />
+              </svg>
             </h3>
             <div
               class="accordion-content"
@@ -210,7 +237,7 @@
               id="accordion2-content"
             >
               <div class="flow-content content-wrapper">
-                <p class="margin-block-start-space-s">
+                <p style="margin-block-start: var(--space-s)">
                   Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
                   adipiscing odio sapien nunc vitae. Et amet maecenas morbi
                   praesent justo convallis facilisis phasellus. Feugiat ac
@@ -231,6 +258,17 @@
               >
                 Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
               </button>
+              <svg
+                style="flex-shrink: 0"
+                class="plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 160 160"
+              >
+                <rect class="vertical-line" x="70" width="10" height="160" />
+                <rect y="70" width="160" height="10" />
+              </svg>
             </h3>
             <div
               class="accordion-content"
@@ -240,7 +278,7 @@
               id="accordion3-content"
             >
               <div class="flow-content content-wrapper">
-                <p class="margin-block-start-space-s">
+                <p style="margin-block-start: var(--space-s)">
                   Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
                   adipiscing odio sapien nunc vitae. Et amet maecenas morbi
                   praesent justo convallis facilisis phasellus. Feugiat ac
@@ -261,6 +299,17 @@
               >
                 Lorem ipsum dolor sit amet consectetur. Ac posuere accumsan?
               </button>
+              <svg
+                style="flex-shrink: 0"
+                class="plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 160 160"
+              >
+                <rect class="vertical-line" x="70" width="10" height="160" />
+                <rect y="70" width="160" height="10" />
+              </svg>
             </h3>
             <div
               class="accordion-content"
@@ -270,7 +319,7 @@
               id="accordion4-content"
             >
               <div class="flow-content content-wrapper">
-                <p class="margin-block-start-space-s">
+                <p style="margin-block-start: var(--space-s)">
                   Lorem ipsum dolor sit amet consectetur. Bibendum cras dolor
                   adipiscing odio sapien nunc vitae. Et amet maecenas morbi
                   praesent justo convallis facilisis phasellus. Feugiat ac
@@ -283,7 +332,7 @@
           </li>
         </ol>
 
-        <a class="button margin-block-start-space-xl" href="/"
+        <a class="button" href="/"
           >CTA Button
           <svg
             class="arrow-icon"
@@ -299,13 +348,9 @@
       </section>
     </main>
 
-    <footer class="padding-block-end-space-3xl">
+    <footer>
       <div class="footer-wrapper">
-        <a
-          class="brand margin-block-end-space-xl"
-          href="/"
-          aria-label="Sunnyside Home"
-        >
+        <a class="brand" href="/" style="margin-block-end: var(--space-xl)">
           Cottage Retreat
         </a>
         <nav class="navigation">
@@ -317,11 +362,15 @@
         </nav>
       </div>
       <div class="footer-wrapper">
-        <ul role="list" class="legal margin-block-start-space-m">
+        <ul
+          role="list"
+          class="legal"
+          style="margin-block-start: var(--space-m)"
+        >
           <li><a href="/">Privacy</a></li>
           <li><a href="/">Terms and Conditions</a></li>
         </ul>
-        <div class="margin-block-start-space-xl">
+        <div style="margin-block-start: var(--space-3xl)">
           <p>
             <small>Company name © 2023. All rights Reserved. </small>
           </p>

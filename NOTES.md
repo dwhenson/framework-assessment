@@ -1,13 +1,12 @@
+FIXME accordian icons
 FIXME inline google fonts
 FIXME burger trigger outline
 FIXME add dimensions to images
 
-TODO Remove SCSS utilites
-TODO CTA animations
-TODO add custom bezer - hover, rolldown, animations
-TODO consolidate animations
 TODO refactor image grid to use classes
 TODO refactor footer
+TODO consolidate animations
+TODO Add some whimsy?
 
 Time spent:
 
@@ -17,4 +16,4 @@ About 3.5 hours
 - 2.5 hours coding - hero image and grid
 - 1 hour coding
 - 2 accordian and footer
-- 2.5 nav and finish accordian
+- 2.5 nav and finish accordian - basically done

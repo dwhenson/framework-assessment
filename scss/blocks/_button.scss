@@ -9,6 +9,7 @@
   padding-inline: var(--space-m);
   border: 1px solid currentColor;
   border-radius: 999px;
+  margin-block-start: var(--space-l);
   background-color: var(--clr-neutral-light);
   transition: color 500ms ease-out, background-color 500ms ease-out;
   font-weight: 400;

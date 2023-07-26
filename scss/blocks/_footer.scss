@@ -1,6 +1,9 @@
 @use "../abstracts" as *;
 
 footer {
+  padding-block: var(--space-xl);
+  border-block-start: 1px solid var(--clr-neutral-dark);
+
   ul {
     display: flex;
     flex-direction: column;
