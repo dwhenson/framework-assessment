@@ -1,0 +1,17 @@
+.hero-image {
+  overflow: hidden;
+
+  img {
+    inline-size: 100%;
+    max-block-size: 37.5rem;
+    object-fit: cover;
+    object-position: center;
+    margin-inline-start: auto;
+  }
+
+  @media (min-width: 640px) {
+    .hero-image img {
+      margin-inline-start: 0;
+    }
+  }
+}

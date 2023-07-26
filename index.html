@@ -21,7 +21,7 @@
   </head>
 
   <body class="layout">
-    <header class="flow-region">
+    <header class="flow-region" style="margin-block-start: var(--space-3xl)">
       <div class="header">
         <a class="brand" href="/" aria-label="Sunnyside Home">
           Cottage Retreat
@@ -44,16 +44,18 @@
         <h1>Lorem ipsum dolor sit amet consectetur. Et at quam ac vitae.</h1>
       </div>
     </header>
-
-    <div style="margin-block-start: var(--space-l); grid-column: 2/-1">
+    <div
+      class="hero-image"
+      style="margin-block-start: var(--space-l); grid-column: 2/-1"
+    >
       <picture>
-        <source srcset="/assets/hero-desktop.jpg" media="(min-width: 640px)" />
+        <source
+          srcset="/assets/hero-desktop2x.jpg 2x, /assets/hero-desktop.jpg"
+          media="(min-width: 640px)"
+        />
         <img
-          class="hero-image"
           src="/assets/hero-mobile.jpg"
           alt="A nice view of some mountains near the cottage."
-          width="1340"
-          height="600"
         />
       </picture>
     </div>
