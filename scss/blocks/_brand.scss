@@ -1,0 +1,10 @@
+.brand {
+  z-index: 10;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brand:has(+ burger-menu > .burger-menu[status="open"]) {
+  color: var(--clr-neutral-light);
+}

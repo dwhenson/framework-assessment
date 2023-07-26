@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  margin-block-start: max(4vh, 2rem);
+
+  .navigation > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-xl);
+  }
+
+  .legal {
+    display: none;
+  }
+
+  .burger-menu[enabled="true"] .legal {
+    position: absolute;
+    display: block;
+    inset-block-end: var(--space-xl);
+
+    a {
+      color: var(--clr-neutral-light);
+    }
+  }
+}
