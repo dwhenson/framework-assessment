@@ -38,17 +38,17 @@ class BurgerMenu extends HTMLElement {
       this.state.enabled = contentRect.width <= this.maxWidth;
     });
 
-    // We want to watch the parent like a hawk
+    // Watch the parent
     observer.observe(this.parentNode);
   }
 
   render() {
     this.innerHTML = `
 			<div class="burger-menu" data-element="burger-root">
-				<button class="burger-menu__trigger" data-element="burger-menu-trigger" type="button" aria-label="Open menu">
-					<span class="burger-menu__bar" aria-hidden="true"></span>
+				<button class="burger-menu-trigger" data-element="burger-menu-trigger" type="button" aria-label="Open menu">
+					<span class="burger-menu-bar" aria-hidden="true"></span>
 				</button>
-				<div class="burger-menu__panel" data-element="burger-menu-panel">
+				<div class="burger-menu-panel" data-element="burger-menu-panel">
 					${this.initialMarkup}
 				</div>
 			</div>

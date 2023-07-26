@@ -1,8 +1,8 @@
-FIXME accordian icons
 FIXME inline google fonts
 FIXME burger trigger outline
 FIXME add dimensions to images
 
+TODO Double check image sizes
 TODO refactor image grid to use classes
 TODO refactor footer
 TODO consolidate animations

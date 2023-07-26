@@ -48,7 +48,7 @@ a {
   background-position-y: 100%;
   background-size: 0% 0.05em;
   background-repeat: no-repeat;
-  transition: background-size 0.2s ease-in-out;
+  transition: background-size 300ms ease-out;
   text-decoration: none;
   color: var(--clr-primary-dark);
 }

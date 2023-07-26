@@ -22,10 +22,11 @@
   inline-size: 100%;
 }
 
+// Accordian content animations
 .accordion-content {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 500ms cubic-bezier(0.5, 0.25, 0, 1);
+  transition: grid-template-rows 500ms ease-out;
 
   &[aria-hidden="false"] {
     grid-template-rows: 1fr;
@@ -36,14 +37,13 @@
   }
 }
 
-// trigger and animations
-
-.plus rect {
+// trigger animations
+.plus-icon rect {
   transform: rotate(0);
   transform-origin: 50% 50%;
-  transition: transform 500ms cubic-bezier(0.5, 0.25, 0, 1);
+  transition: transform 500ms cubic-bezier(0, 0.26, 0.13, 1.25);
 }
 
-.accordion-trigger[aria-expanded="true"] + svg .vertical-line {
+.accordion-trigger[aria-expanded="true"] + svg .minus {
   transform: rotate(270deg);
 }

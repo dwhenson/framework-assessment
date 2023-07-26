@@ -21,3 +21,14 @@ accordion.addEventListener("click", (event) => {
   if (!activePanel) return;
   toggleAccordion(activePanel);
 });
+
+// Close burger-menu with escape
+window.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  const menuIsOpen = document.querySelector(
+    ".burger-menu[enabled='true'][status='open']"
+  );
+  if (menuIsOpen) {
+    menuIsOpen.setAttribute("status", "closed");
+  }
+});

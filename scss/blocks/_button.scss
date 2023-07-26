@@ -11,7 +11,7 @@
   border-radius: 999px;
   margin-block-start: var(--space-l);
   background-color: var(--clr-neutral-light);
-  transition: color 500ms ease-out, background-color 500ms ease-out;
+  transition: color 300ms ease-out, background-color 300ms ease-out;
   font-weight: 400;
   line-height: 1;
   text-decoration: none;
@@ -25,10 +25,13 @@
 }
 
 .arrow-icon {
+  transform: translateX(0);
+  transition: stroke 300ms ease-out,
+    transform 300ms cubic-bezier(0, 0.26, 0.13, 1.55);
   stroke: var(--clr-primary-dark);
-  transition: stroke 500ms ease-out;
 }
 
 .button:where(:hover, :focus, :active) .arrow-icon {
   stroke: var(--clr-neutral-light);
+  transform: translateX(5px);
 }
