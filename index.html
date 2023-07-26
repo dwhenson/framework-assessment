@@ -60,7 +60,7 @@
 
     <main class="flow-region">
       <section>
-        <div class="inset">
+        <div class="inset-inline-start">
           <div class="flow-content">
             <p style="font-size: var(--step--1); letter-spacing: 2px">
               Subheading
@@ -75,7 +75,7 @@
               nisl vitae. Egestas sed erat molestie cras accumsan purus
               tincidunt. Elementum ultrices quis est semper donec tortor. Lacus.
             </p>
-            <a class="button margin-block-start-space-xl" href="/"
+            <a class="button" href="/"
               >CTA Button
               <svg
                 class="arrow-icon"
@@ -93,8 +93,8 @@
       </section>
 
       <section class="flow-content" style="--flow-content: var(--space-s)">
-        <div class="has-sidebar" data-state="reversed">
-          <div>
+        <div class="row">
+          <div class="wide">
             <img
               src="/assets/grid/1.jpg"
               alt="A winding mountain road."
@@ -102,7 +102,7 @@
               class="grid-image"
             />
           </div>
-          <div>
+          <div class="narrow">
             <img
               src="/assets/grid/2.jpg"
               alt="The cottage in the woods."
@@ -111,24 +111,26 @@
             />
           </div>
         </div>
-        <div class="has-sidebar">
-          <img
-            src="/assets/grid/3.jpg"
-            alt="Wooden cottage interior."
-            loading="lazy"
-            class="grid-image"
-          />
+        <div class="row">
+          <div class="wide">
+            <img
+              src="/assets/grid/3.jpg"
+              alt="Wooden cottage interior."
+              loading="lazy"
+              class="grid-image"
+            />
+          </div>
         </div>
-        <div class="has-sidebar" style="--flex-grow: 1">
-          <div>
+        <div class="row">
+          <div class="equal">
             <img
               src="/assets/grid/4.jpg"
               alt="The lounge in the cottage."
               loading="lazy"
-              class="grid-image tall"
+              class="grid-image equal tall"
             />
           </div>
-          <div>
+          <div class="equal">
             <img
               src="/assets/grid/5.jpg"
               alt="A river near the cottage."
@@ -137,16 +139,16 @@
             />
           </div>
         </div>
-        <div class="has-sidebar">
-          <div>
+        <div class="row">
+          <div class="narrow">
             <img
               src="/assets/grid/7.jpg"
               alt="The cottage's kitchen."
               loading="lazy"
-              class="grid-image short"
+              class="grid-image narrow short"
             />
           </div>
-          <div>
+          <div class="wide">
             <img
               src="/assets/grid/6.jpg"
               alt="The river view from the kitchen."

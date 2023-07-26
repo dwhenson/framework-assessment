@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-.inset {
+.inset-inline-start {
   padding-inline-start: 0;
 
   @include respond-to("small") {

@@ -4,15 +4,15 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
-  block-size: var(--block-size, 24rem);
+  block-size: var(--block-size, 22rem);
 
   @include respond-to("small") {
-    --block-size: 31rem;
+    --block-size: 30rem;
   }
 
   &.short {
     @include respond-to("small") {
-      --block-size: 23rem;
+      --block-size: 22rem;
     }
   }
 

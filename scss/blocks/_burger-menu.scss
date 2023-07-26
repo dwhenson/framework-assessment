@@ -55,6 +55,14 @@
   cursor: pointer;
 }
 
+// Fix outline being hidden by panel
+.burger-menu[enabled="true"][status="open"] .burger-menu-trigger:focus-visible {
+  z-index: 10;
+  opacity: 1 !important;
+  outline: 2px dashed var(--clr-neutral-light);
+  outline-offset: 3px;
+}
+
 // Hamburger menu panel size and positioning
 .burger-menu[enabled="true"] .burger-menu-panel {
   position: absolute;

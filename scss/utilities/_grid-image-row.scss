@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, var(--space-s));
+
+  .narrow {
+    flex-basis: var(--narrow-size, 18rem);
+    flex-grow: var(--narrow-grow, 1);
+  }
+
+  .equal {
+    flex: 1;
+    min-inline-size: var(--wide-size, 18.5rem);
+  }
+
+  .wide {
+    flex-basis: 0;
+    flex-grow: var(--wide-grow, 999);
+    min-inline-size: var(--wide-size, 50%);
+  }
+}
