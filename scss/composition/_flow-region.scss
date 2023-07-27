@@ -1,5 +1,5 @@
 @use "../abstracts" as *;
 
 :where(body, .flow-region) > * + * {
-  margin-block-start: var(--flow-region, calc(var(--space-3xl) * 1.5));
+  margin-block-start: max(10vh, var(--space-l));
 }
