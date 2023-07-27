@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns:
     minmax(var(--min, 1rem), 1fr)
-    minmax(calc(375px - var(--space-s-3xl)), calc(1440px - var(--space-s-3xl)))
+    minmax(calc(325px - var(--space-s-3xl)), calc(1440px - var(--space-s-3xl)))
     minmax(var(--min, 1rem), 1fr);
 
   > * {
