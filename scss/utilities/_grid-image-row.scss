@@ -4,13 +4,13 @@
   gap: var(--gap, var(--space-s));
 
   .narrow {
-    flex-basis: var(--narrow-size, 18rem);
+    flex-basis: var(--narrow-size, 22rem);
     flex-grow: var(--narrow-grow, 1);
   }
 
   .equal {
     flex: 1;
-    min-inline-size: var(--wide-size, 18.5rem);
+    min-inline-size: var(--equal-size, 22.5rem);
   }
 
   .wide {
