@@ -19,7 +19,7 @@
   }
 
   .burger-menu[enabled="true"] .legal {
-    position: absolute;
+    position: fixed;
     display: block;
     inset-block-end: var(--space-xl);
 
