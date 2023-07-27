@@ -70,7 +70,7 @@
   visibility: hidden;
   opacity: 0;
   inline-size: 100vw;
-  block-size: 100vh;
+  block-size: 100%;
   padding-block-start: calc(var(--space-3xl) * 2);
   padding-inline: var(--space-s-3xl);
   overflow-y: auto;
